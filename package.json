@@ -1,6 +1,6 @@
 {
   "name": "@withaspark/toggle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The smallest on-off toggle.",
   "main": "src/jquery.toggle.js",
   "scripts": {
