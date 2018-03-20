@@ -1,0 +1,42 @@
+{
+  "name": "@withaspark/toggle",
+  "version": "1.0.3",
+  "description": "The smallest on-off toggle.",
+  "main": "src/jquery.toggle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withaspark/toggle.git"
+  },
+  "keywords": [
+    "toggle",
+    "select",
+    "checkbox",
+    "on",
+    "off"
+  ],
+  "author": "Stephen Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/withaspark/toggle/issues"
+  },
+  "homepage": "https://github.com/withaspark/toggle#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.8.8",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-open": "^2.0.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "less": "^2.7.1"
+  }
+}
