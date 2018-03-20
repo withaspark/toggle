@@ -1,0 +1,67 @@
+
+.toggle-container,
+.toggle-container * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.toggle-container {
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 36px;
+    width: 70px;
+    background-color: #ddd;
+    border: 1px solid #ccd0d2;
+    border-radius: 4px;
+    -moz-transition: background 0.1s linear;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.1s;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.toggle-block .toggle-container {
+    width: 100%;
+}
+.toggle-inline .toggle-container {
+    display: inline-block;
+}
+.toggle-container.toggle-on {
+    background-color: #007aff;
+}
+.toggle-container > .toggle-handle {
+    position: absolute;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    left: 0px;
+    background-color: #fff;
+    border: 1px solid #ccd0d2;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px -3px #444;
+    -moz-transition: background 0.1s linear;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.1s;
+    transition: all 0.1s linear;
+}
+.toggle-container > .toggle-handle.toggle-on {
+    left: 100%;
+    margin-left: -34px;
+}
+
+.toggle-container:disabled,
+.toggle-container.disabled {
+    opacity: 0.9;
+    cursor: not-allowed;
+}
+.toggle-container.toggle-on:disabled,
+.toggle-container.toggle-on.disabled {
+    opacity: 0.5;
+}
+.toggle-container:disabled > .toggle-handle,
+.toggle-container.disabled > .toggle-handle {
+    background-color: #eee;
+}
